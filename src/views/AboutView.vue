@@ -1,5 +1,26 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <NavBar />
+    <Main />
+    <AboutPage />
+    <Footer />
   </div>
 </template>
+
+<script>
+// @ is an alias to /src
+import NavBar from '../components/NavBar.vue'
+import Main from '../components/Main.vue'
+import AboutPage from '../components/AboutPage.vue'
+import Footer from '../components/Footer.vue'
+
+export default {
+  name: 'AboutView',
+  components: {
+    NavBar,
+    Main,
+    AboutPage,
+    Footer
+  }
+}
+</script>
